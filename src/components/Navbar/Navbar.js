@@ -65,7 +65,7 @@ const Navbar = () => {
       }
     });
   };
-  console.log(pathName);
+
   return (
     <div
       className={[classes.wrapper, isScrolled && classes.wrapperBg].join(" ")}
