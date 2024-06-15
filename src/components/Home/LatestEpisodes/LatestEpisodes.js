@@ -23,7 +23,7 @@ const LatestEpisodes = () => {
   ];
 
   return (
-    <Wrapper id="section1">
+    <Wrapper className={classes.wrapper}>
       <div className={clsx("container", classes.container)}>
         <Heading xl5 highlight>
           Latest Episodes

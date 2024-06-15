@@ -1,5 +1,4 @@
 .wrapper {
-  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -7,4 +6,6 @@
   display: flex;
   flex-direction: column;
   gap: 36px;
+}
+@media only screen and (max-width: 991px) {
 }

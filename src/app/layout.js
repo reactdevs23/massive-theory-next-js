@@ -10,7 +10,7 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-lt-installed={true}>
+    <html lang="en">
       <Head />
       <body suppressHydrationWarning={true}>
         <Navbar />

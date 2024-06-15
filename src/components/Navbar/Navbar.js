@@ -87,6 +87,7 @@ const Navbar = () => {
               key={i}
               to={el.to.split("#")[1]}
               spy={true}
+              offset={-30}
               smooth={true}
               duration={500}
               className={classes.navItem}
