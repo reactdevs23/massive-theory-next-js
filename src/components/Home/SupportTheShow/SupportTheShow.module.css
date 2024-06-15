@@ -1,0 +1,122 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.wrapper {
+  background: url(/images/home/supportTheShow.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 380px;
+  max-height: 380px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.heading {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  z-index: 1;
+}
+.title {
+  padding-bottom: 10px;
+}
+.subscriberContainer,
+.donationContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.infoContainer,
+.donationBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.subscribeForm {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 35px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.button {
+  font-size: 16px;
+  background: var(--Primary-Default);
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: var(--Base-0);
+  text-align: center;
+  min-width: 169px;
+}
+.img {
+  width: 100%;
+  display: block;
+  max-width: 546px;
+}
+
+.list {
+  color: var(--Base-0);
+}
+.helpsLists {
+  margin-left: 30px;
+}
+@media only screen and (max-width: 1199px) {
+  .subscriberContainer,
+  .donationContainer {
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .subscriberContainer,
+  .donationContainer {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .donationContainer {
+    padding-top: 24px;
+  }
+  .subscribeForm {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .donationBox {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .subscribeForm {
+    padding: 24px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .subscribeForm {
+    padding: 20px;
+  }
+}

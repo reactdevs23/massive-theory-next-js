@@ -1,0 +1,9 @@
+.wrapper {
+  padding-top: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
