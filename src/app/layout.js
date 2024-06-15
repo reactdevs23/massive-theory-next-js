@@ -3,10 +3,9 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
 import Head from "next/head";
-import { Metadata } from "next";
 
 export const metadata = {
-  title: "...",
+  title: "Massive Theory",
   description: "...",
 };
 export default function RootLayout({ children }) {
