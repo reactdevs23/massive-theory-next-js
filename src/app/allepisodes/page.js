@@ -55,7 +55,7 @@ const AllEpisodes = () => {
     },
   ];
   return (
-    <Wrapper>
+    <Wrapper className={classes.wrapper}>
       <div className={clsx("container", classes.container)}>
         <Heading xl5 highlight>
           All Episodes

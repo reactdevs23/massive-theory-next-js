@@ -34,6 +34,10 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 100px;
+  }
+
   .container {
     gap: 24px;
   }
