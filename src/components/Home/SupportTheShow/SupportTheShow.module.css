@@ -4,13 +4,12 @@
   gap: 40px;
 }
 
-.wrapper {
+/* .wrapper {
   background: url(/images/home/supportTheShow.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 380px;
-  max-height: 380px;
+
   width: 100%;
   position: relative;
   z-index: 1;
@@ -23,6 +22,12 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: -1;
+} */
+.container {
+  position: relative;
+  min-height: 370px;
+  max-height: 370px;
+  padding: 5%;
 }
 .heading {
   position: absolute;
@@ -111,6 +116,10 @@
   }
 }
 @media only screen and (max-width: 520px) {
+  .container {
+    min-height: 280px;
+    max-height: 280px;
+  }
   .subscribeForm {
     padding: 24px;
   }

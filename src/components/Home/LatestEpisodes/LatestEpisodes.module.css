@@ -34,12 +34,20 @@
   }
 }
 @media only screen and (max-width: 640px) {
+  .heading {
+    text-align: center;
+  }
   .episodes {
     grid-template-columns: repeat(1, 1fr);
-    max-width: 450px;
+    max-width: 400px;
     margin: 0 auto;
   }
   .episode {
     gap: 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .heading {
+    text-align: left;
   }
 }

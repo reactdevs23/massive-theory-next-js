@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import classes from "./SingleEpisode.module.css";
 
 const ResponsivePlayer = dynamic(
-  () => import("../../../components/PlayVideo/PlayVideo"),
+  () => import("../../components/PlayVideo/PlayVideo"),
   {
     ssr: false,
   }

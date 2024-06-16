@@ -6,7 +6,7 @@ import PlayNow from "@/components/Home/PlayNow/PlayNow";
 import SupportTheShow from "@/components/Home/SupportTheShow/SupportTheShow";
 
 import React from "react";
-import SingleEpisode from "./allepisodes/[single-episode]/page";
+import SingleEpisode from "./[single-episode]/page";
 
 const Home = () => {
   return (

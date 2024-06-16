@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./HeroSection.module.css";
-import { Heading, Highlight, Text, Wrapper } from "../../common";
+import { Heading, Highlight, Text, VideoBg, Wrapper } from "../../common";
 import clsx from "clsx";
 
 const HeroSection = () => {
-  const socialLiks = [
+  const socialLinks = [
     {
       logo: "/images/youtube.png",
       link: "#",
@@ -18,11 +18,13 @@ const HeroSection = () => {
       link: "#",
     },
   ];
+
   return (
     <Wrapper className={classes.wrapper}>
       <div className={clsx("container", classes.container)}>
+        <VideoBg url="/video/Canvas_Alien_Loop.mp4" />
+
         <div className={classes.infoContainer}>
-          {" "}
           <Heading xl4 base0 className={classes.heading}>
             <Highlight> Animated stories</Highlight> about the past, present and
             future of <Highlight>humanity</Highlight>.
@@ -31,7 +33,7 @@ const HeroSection = () => {
             Watch the Series on
           </Text>
           <div className={classes.socialContainer}>
-            {socialLiks.map((social, i) => (
+            {socialLinks.map((social, i) => (
               <a href={social.link} target="_blank" rel="noreferrer" key={i}>
                 <img src={social.logo} alt="#" className={classes.logo} />
               </a>

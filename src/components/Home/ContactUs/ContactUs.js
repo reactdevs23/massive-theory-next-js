@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import classes from "./ContactUs.module.css";
-import { Heading, Text, Wrapper } from "@/components/common";
+import { Heading, Text, VideoBg, Wrapper } from "@/components/common";
 import clsx from "clsx";
 import Input from "@/components/common/Input/Input";
 const ContactUs = () => {
@@ -27,13 +27,13 @@ const ContactUs = () => {
   ];
   return (
     <Wrapper className={classes.mainWrapper} id="contact">
-      <div className={classes.wrapper}>
-        <div className={clsx("container", classes.container)}>
-          <Heading xl5 highlight className={classes.heading}>
-            Contact
-          </Heading>
-        </div>
+      <div className={clsx("container", classes.container)}>
+        <VideoBg url="/video/UFO_BG.mp4" />
+        <Heading xl5 highlight className={classes.heading}>
+          Contact
+        </Heading>
       </div>
+
       <div className={clsx(classes.header, "container")}>
         <Text xl highlight>
           If you have an idea for the show, a business inquiry, or want to

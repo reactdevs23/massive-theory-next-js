@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import classes from "./SupportTheShow.module.css";
-import { Heading, Text, Wrapper } from "@/components/common";
+import { Heading, Text, VideoBg, Wrapper } from "@/components/common";
 import clsx from "clsx";
 import Input from "@/components/common/Input/Input";
 const SupportTheShow = () => {
@@ -20,13 +20,12 @@ const SupportTheShow = () => {
   ];
   return (
     <Wrapper className={classes.mainWrapper} id="support">
-      <div className={classes.wrapper}>
-        <div className={clsx("container", classes.container)}>
-          <Heading xl5 highlight className={classes.heading}>
-            Support the Show
-          </Heading>
-        </div>
-      </div>{" "}
+      <div className={clsx("container", classes.container)}>
+        <VideoBg url="/video/Mountain_BG.mp4" />
+        <Heading xl5 highlight className={classes.heading}>
+          Support the Show
+        </Heading>
+      </div>
       <div className={clsx(classes.subscriberContainer, "container")}>
         <div className={classes.infoContainer}>
           <Heading xl4 highlight className={classes.title}>
